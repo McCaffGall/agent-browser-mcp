@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Agent Browser</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="head">
+    <div class="brand">
+      <img class="brand-icon" src="icons/icon-32.png" alt="" width="24" height="24">
+      <div>
+        <h1>Agent Browser</h1>
+        <p id="conn-status" class="status">Checking...</p>
+      </div>
+    </div>
+    <button id="kill-btn" type="button" class="btn danger">Kill Switch</button>
+  </header>
+
+  <section id="groups-section" class="card">
+    <h2>Active Agent Tab Groups</h2>
+    <div id="groups-list" class="list"></div>
+  </section>
+
+  <section class="card">
+    <h2>Pairing</h2>
+    <label class="field">
+      <span>Broker WS URL</span>
+      <input id="ws-url" type="text" placeholder="ws://127.0.0.1:17788/ws">
+    </label>
+    <label class="field">
+      <span>Pairing Token (or paste JSON from pair command)</span>
+      <input id="token-input" type="password" placeholder="Paste token or JSON">
+    </label>
+    <div class="actions">
+      <button id="pair-btn" type="button" class="btn primary">Save &amp; Connect</button>
+      <button id="unpair-btn" type="button" class="btn">Unpair</button>
+    </div>
+    <p id="msg" class="msg"></p>
+  </section>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

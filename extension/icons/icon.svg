@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgGrad" x1="5" y1="5" x2="123" y2="123" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#26293d"/>
+      <stop offset="100%" stop-color="#11111b"/>
+    </linearGradient>
+    <clipPath id="tileClip">
+      <rect x="5" y="5" width="118" height="118" rx="26" ry="26"/>
+    </clipPath>
+    <radialGradient id="cyanGlow" cx="44%" cy="56%" r="36%">
+      <stop offset="0%" stop-color="#7dcfff" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#7dcfff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="peachGlow" cx="62%" cy="56%" r="34%">
+      <stop offset="0%" stop-color="#fab387" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#fab387" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g clip-path="url(#tileClip)">
+    <rect x="5" y="5" width="118" height="118" fill="url(#bgGrad)"/>
+    <rect x="5" y="38" width="118" height="85" fill="#181825" fill-opacity="0.86"/>
+    <rect x="5" y="38" width="118" height="1.5" fill="#cdd6f4" fill-opacity="0.14"/>
+    <circle cx="56" cy="76" r="44" fill="url(#cyanGlow)"/>
+    <circle cx="76" cy="76" r="42" fill="url(#peachGlow)"/>
+    <rect x="18" y="15.5" width="27" height="12" rx="6" fill="#fab387"/>
+    <rect x="50.5" y="15.5" width="27" height="12" rx="6" fill="#a6e3a1"/>
+    <rect x="83" y="15.5" width="27" height="12" rx="6" fill="#89b4fa"/>
+    <path d="M39.5 54.5 L60.2 76.2 L39.5 98" fill="none" stroke="#7dcfff" stroke-width="11.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M62.5 54.5 L83.2 76.2 L62.5 98" fill="none" stroke="#f8fafc" stroke-width="11.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <rect x="6.4" y="6.4" width="115.2" height="115.2" rx="24.6" ry="24.6" fill="none" stroke="#cdd6f4" stroke-opacity="0.24" stroke-width="2.8"/>
+</svg>

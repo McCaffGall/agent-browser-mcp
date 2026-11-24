@@ -1,0 +1,4 @@
+extension/pairing.local.json
+.DS_Store
+node_modules/
+*.log

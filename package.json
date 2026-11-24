@@ -1,0 +1,17 @@
+{
+  "name": "agent-browser-mcp",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Universal MV3 browser extension + zero-dependency MCP server giving AI coding agents isolated, colored tab groups in your real browser without stealing mouse, keyboard, or focus.",
+  "bin": {
+    "agent-browser-mcp": "./bin/agent-browser-mcp.mjs"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "scripts": {
+    "start": "node bin/agent-browser-mcp.mjs serve",
+    "test": "node --test \"test/*.test.mjs\""
+  }
+}
